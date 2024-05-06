@@ -1,47 +1,36 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-    <meta charaset="UTF-8">
-    <meta name="viewport" content ="width=device-width, initial-scale=1.0">
-    <title>My Blogspot</title>
-    <link rel=""stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <link rel="stylesheet" href="C:\Users\Joey\Challenge-4\my-blog\assets\css\style.css">
 </head>
 
 <body>
     <header>
-        <h1>Welcome to the Login</h1>
+        <!--Dark Mode Button, not working-->
+        <img id="dark-mode-toggle" src="C:\Users\Joey\Challenge-4\my-blog\assets\eclipse.jpg" alt="Dark Mode Toggle">
+        <h1>Blogs</h1>
     </header>
 
     <div class="main-content">
-        <!--put the logo here, as image.jpg-->
-        <section class="logo-section">
-            <img src="image.jpg" alt="logo">
+        <section class="blog-section">
+            <h2>Form Data</h2>
+            <div id="form-data">
+                <!--Form data should appear here-->
+            </div>
+            <!--Back Button error, file not found, javaFormData.js-->
+            <button id="back-button">Back</button>
         </section>
-        <!--put the login form here-->
-        <section class="form-section">
-            <h2>Login Form</h2>
-            <form id="login-form">
-                <label for="username">Username:</label><br> 
-                <input type="text" id="username" name="name" required><br>
-                <label for="title">Title:</label><br>
-                <input type="text" id="title" name="title" required><br>
-                <label for="content">Content:</label><br>
-                <input type="text" id="content" name="content" required><br>
-                <input type="submit" value="Submit">
-            </form>
-        </section>
-        <script src="javaForm.js"></script>
-
     </div>
 
-    <!--This is the Footer, add portfolio link-->
     <footer>
         <p>&copy; 2024 Joe Sandoval</p>
-        <p><a href="portfolio link">Portfolio</a></p>
     </footer>
-</body>
 
+    <!--Error, can't find javaFormData-->
+    <script src="my-blog/assets/js/javaFormData.js"></script>
+</body>
 
 </html>
