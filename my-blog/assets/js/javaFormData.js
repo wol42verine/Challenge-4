@@ -1,3 +1,4 @@
+//Linked to blog.html
 document.addEventListener("DOMContentLoaded", function(){
     //should get data from local storage
     const formData = JSON.parse(localStorage.getItem('formData'));

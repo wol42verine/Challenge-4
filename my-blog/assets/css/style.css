@@ -52,3 +52,14 @@ header, footer {
     width: 30px;
     height: auto;
 }
+
+
+.form-data {
+    border:1px solid #ccc;
+    padding:10px;
+    margin-bottom:5px;
+}
+
+.form-data div {
+    margin-bottom: 5px;
+}
