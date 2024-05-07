@@ -16,7 +16,7 @@ const backButton =document.getElementById("back-button");
 
 //event listener for Back button
 backButton.addEventListener("click",function(){
-    window.location.href="C:\Users\Joey\Challenge-4\my-blog\index.html";
+    window.location.href="my-blog\index.html";
 });
 
 //Dark Mode toggle
