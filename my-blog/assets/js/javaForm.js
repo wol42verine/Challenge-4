@@ -11,8 +11,8 @@ document.getElementById("login-form").addEventListener("submit", function(event)
     });
 
     localStorage.setItem('formData', JSON.stringify(jsonData));
-    //console logs form data
-    window.location.href = "C:\Users\Joey\Challenge-4\my-blog\blog.html";
+    //Should direct user to blog.html, Error
+    window.location.href = "blog.html";
 });
 
 //Dark Mode toggle
