@@ -1,4 +1,3 @@
-//Todo Can't access formData error
 document.getElementById("login-form").addEventListener("submit", function(event){
     event.preventDefault(); //stops submission
     //getting form data
@@ -10,7 +9,16 @@ document.getElementById("login-form").addEventListener("submit", function(event)
         jsonData[key] = value;
     });
 
-    localStorage.setItem('formData', JSON.stringify(jsonData));
+    //Create array for formData
+    //const jsonDataArray=[jsonData];
+
+    //New code for saving data as an array
+    const existingFormData =JSON.parse(localStorage.getItem('formDataArray')) || [];
+
+    existingFormData.push(jsonData);
+
+    //saves array under the key 'formData'
+    localStorage.setItem('formDataArray', JSON.stringify(existingFormData));
     //Should direct user to blog.html, Error
     window.location.href = "blog.html";
 });
